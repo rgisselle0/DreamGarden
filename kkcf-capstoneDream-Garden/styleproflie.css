@@ -1,0 +1,180 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #7d8c80;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.navbar {
+  background-color: #3a4b3d; 
+  font-size: 16px;
+}
+
+.navbar-brand img {
+  width: 60px;
+  height: 60px;
+}
+
+.navbar-toggler {
+  border-color: #ffffff;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='%23fff' stroke-width='2' d='M5 7h20M5 15h20M5 23h20'/%3E%3C/svg%3E");
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.nav-link {
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.nav-link.active {
+  font-weight: bold;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.navbar-Cart img, .navbar-Profile img {
+  border-radius: 10px;
+}
+
+main.container {
+  margin-top: 20px;
+}
+
+h1 {
+  font-family: "Oregano", cursive;
+  color: #1b3723;
+  text-align: center;
+}
+
+.box {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #333;
+}
+
+/* Middle*/
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.box {
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background-color: #3a4b3d; 
+  padding: 30px 0;
+  color: #ffffff;
+}
+
+.footer-logo {
+  max-width: 150px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  color: #7a9f81;
+}
+
+.social-icons a {
+  color: #ffffff;
+  margin: 0 5px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #dde4de;
+}
+
+.imgSocial {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#imgDG {
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+}
+#imgCart,
+#imgProfile {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .side-nav {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .navbar-collapse {
+    flex-direction: column;
+  }
+
+  .navbar-nav {
+    margin: 10px 0;
+  }
+
+  .navbar-Cart,
+  .navbar-Profile {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .footer-logo {
+    max-width: 100px;
+  }
+
+  .footer-links {
+    text-align: center;
+  }
+}
